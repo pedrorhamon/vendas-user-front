@@ -6,13 +6,55 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UsuarioEditComponent,
+    AcessDeniedComponent,
+    NovaSenhaComponent,
+    PermissaoComponent,
+    PermissaoEditComponent,
+    SubPermissaoComponent,
+    SubPermissaoEditComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CheckboxModule,
+    ReactiveFormsModule,
+    CardModule,
+    ButtonModule,
+    InputTextModule,
+    FloatLabelModule,
+    HttpClientModule,
+    TableModule,
+    BrowserAnimationsModule,
+    ConfirmDialogModule,
+    MessagesModule,
+    MessageModule,
+    ToastModule,
+    RecaptchaModule,
+    RecaptchaFormsModule,
+    SidebarModule,
+    MenubarModule,
+    ChartModule,
+    MultiSelectModule,
+    CalendarModule,
+    DropdownModule,
+    ProgressSpinnerModule,
+    DialogModule,
+    FormsModule,
+    InputTextareaModule,
+    InputNumberModule,
+    FileUploadModule,
+    PickListModule,
+    MapsModule
   ],
-  providers: [],
+  providers: [
+    ConfirmationService,
+    MessageService,
+    provideClientHydration(),
+    DecimalPipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
